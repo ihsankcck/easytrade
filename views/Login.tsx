@@ -14,8 +14,8 @@ const LoginView: FC = ({navigation}) => {
 
   const {handleSubmit, control} = useForm<LoginRequest>({
     defaultValues: {
-      identifier: 'ihsankck',
-      password: '123456789',
+      identifier: '',
+      password: '',
     },
   });
 

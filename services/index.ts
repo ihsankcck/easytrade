@@ -2,7 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
 
 const Api = axios.create({
-  baseURL: 'https://cms.gallant-wiles.37-140-242-109.plesk.page',
+  baseURL: 'https://cms.gallant-wiles.37-140-242-109.plesk.page/api',
 });
 
 Api.interceptors.request.use(
