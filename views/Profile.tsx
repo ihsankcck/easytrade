@@ -13,14 +13,18 @@ import {Button, Box, Flex, IconButton, Icon, Text} from 'native-base';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {useAuthContext} from '../context/AuthContext';
 
-const Profile = () => {
+const Profile = ({navigation}) => {
   const {email, signOut, userName} = useAuthContext();
 
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+    backgroundColor: Colors.lighter, //isDarkMode ? Colors.darker : Colors.lighter,
     flex: 1,
+  };
+
+  const goToNewAccount = () => {
+    navigation.navigate('NewAccount');
   };
 
   return (
@@ -32,6 +36,13 @@ const Profile = () => {
           <Text fontSize="15px" color="primary.700">
             {email}
           </Text>
+
+          <Button
+            mt="20px"
+            onPress={goToNewAccount}
+            leftIcon={<Icon color="white" size="xl" as={Entypo} name="plus" />}>
+            Yeni Hesap Aç
+          </Button>
         </Flex>
         <Flex>
           <Button onPress={signOut}>Çıkış</Button>
@@ -40,11 +51,5 @@ const Profile = () => {
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  title: {
-    fontSize: 30,
-  },
-});
 
 export default Profile;

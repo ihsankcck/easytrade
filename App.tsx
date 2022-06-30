@@ -1,12 +1,10 @@
 import * as React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import {NativeBaseProvider, extendTheme} from 'native-base';
-import {QueryClientProvider, QueryClient} from 'react-query';
 
 import {AuthContextProvider} from './context/AuthContext';
+import {QueryContextProvider} from './context/QueryContext';
 import Router from './views/Router';
-
-const queryClient = new QueryClient();
 
 function App() {
   const newColorTheme = {
@@ -26,13 +24,13 @@ function App() {
   const theme = extendTheme({colors: newColorTheme});
 
   return (
-    <QueryClientProvider client={queryClient}>
+    <QueryContextProvider>
       <AuthContextProvider>
         <NativeBaseProvider config={config} theme={theme}>
           <Router />
         </NativeBaseProvider>
       </AuthContextProvider>
-    </QueryClientProvider>
+    </QueryContextProvider>
   );
 }
 

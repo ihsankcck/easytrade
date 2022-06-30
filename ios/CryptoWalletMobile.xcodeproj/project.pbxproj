@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,24 +12,8 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		25010EE235C741259089DDB5 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33836827E8E243B09E93F2B7 /* Fontisto.ttf */; };
-		2DAC35589ABD469FBE4C018E /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB075724FE2343DE92EA2068 /* MaterialCommunityIcons.ttf */; };
-		36B43F0CE93E405C9AC53B4B /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96C782EFB15746FA8A324C9D /* FontAwesome5_Brands.ttf */; };
-		3DBB232B49714E49AFCCC2EF /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2885A30C84824F4CBE33180A /* Ionicons.ttf */; };
-		463B45BAA0184CA4BA447702 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FEE7F8EBB47F4758883FCAEA /* AntDesign.ttf */; };
-		569BA4AA4F8F4DFAB212C8DB /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 298728EDE34A48B68B4EDBC5 /* SimpleLineIcons.ttf */; };
-		63516B5F65BD410DB3C3B7BC /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CA5CF26EFDC41048952BBAD /* Feather.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-CryptoWalletMobile-CryptoWalletMobileTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-CryptoWalletMobile-CryptoWalletMobileTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		93D9C8C82C994299826DA18E /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D388D2647E7844BC9F35C5B4 /* FontAwesome5_Regular.ttf */; };
-		A3F0B7558F704F068E2FCA73 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7AE2EC568834B6A9C0DD36C /* Octicons.ttf */; };
-		A6023EA604504A08A4E27149 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 962556F4FBE4495AAE6FDC71 /* FontAwesome.ttf */; };
-		ACC747C46A104D3DBEA3EFEB /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F74A534D23F24910A77D638E /* FontAwesome5_Solid.ttf */; };
-		AD8338BF30DE4CC0A1F3E9AB /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15FC307107DF4031B67869B7 /* Entypo.ttf */; };
-		C472ADEC90A7443C99C11A23 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9590886E213E4DC887F5997A /* Foundation.ttf */; };
-		C4A03D95B34F4B62A113031E /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BB46F4D1DE434BA0EBCCDB /* Zocial.ttf */; };
-		D47AD7039CF143F6A38BB13F /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5953C172FB3C4FECA0B9444E /* MaterialIcons.ttf */; };
-		EDAE3C3EBE2A4CAF8DFB3454 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75495BE2FBEC4C7B8C93421F /* EvilIcons.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,30 +36,14 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CryptoWalletMobile/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CryptoWalletMobile/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CryptoWalletMobile/main.m; sourceTree = "<group>"; };
-		15FC307107DF4031B67869B7 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-CryptoWalletMobile-CryptoWalletMobileTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CryptoWalletMobile-CryptoWalletMobileTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2885A30C84824F4CBE33180A /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
-		298728EDE34A48B68B4EDBC5 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
-		33836827E8E243B09E93F2B7 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
-		3B4392A12AC88292D35C810B /* Pods-CryptoWalletMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWalletMobile.debug.xcconfig"; path = "Target Support Files/Pods-CryptoWalletMobile/Pods-CryptoWalletMobile.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-CryptoWalletMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWalletMobile.release.xcconfig"; path = "Target Support Files/Pods-CryptoWalletMobile/Pods-CryptoWalletMobile.release.xcconfig"; sourceTree = "<group>"; };
-		5953C172FB3C4FECA0B9444E /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-CryptoWalletMobile-CryptoWalletMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWalletMobile-CryptoWalletMobileTests.debug.xcconfig"; path = "Target Support Files/Pods-CryptoWalletMobile-CryptoWalletMobileTests/Pods-CryptoWalletMobile-CryptoWalletMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
+		533679F18AD016A69DAD46E4 /* Pods-CryptoWalletMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWalletMobile.debug.xcconfig"; path = "Target Support Files/Pods-CryptoWalletMobile/Pods-CryptoWalletMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-CryptoWalletMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CryptoWalletMobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		75495BE2FBEC4C7B8C93421F /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
-		7CA5CF26EFDC41048952BBAD /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CryptoWalletMobile/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-CryptoWalletMobile-CryptoWalletMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWalletMobile-CryptoWalletMobileTests.release.xcconfig"; path = "Target Support Files/Pods-CryptoWalletMobile-CryptoWalletMobileTests/Pods-CryptoWalletMobile-CryptoWalletMobileTests.release.xcconfig"; sourceTree = "<group>"; };
-		9590886E213E4DC887F5997A /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
-		962556F4FBE4495AAE6FDC71 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
-		96C782EFB15746FA8A324C9D /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
-		C4BB46F4D1DE434BA0EBCCDB /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
-		D388D2647E7844BC9F35C5B4 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		BD683E0026D29E0D664F33B1 /* Pods-CryptoWalletMobile-CryptoWalletMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWalletMobile-CryptoWalletMobileTests.debug.xcconfig"; path = "Target Support Files/Pods-CryptoWalletMobile-CryptoWalletMobileTests/Pods-CryptoWalletMobile-CryptoWalletMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E8BBE8EA125736754C928E21 /* Pods-CryptoWalletMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWalletMobile.release.xcconfig"; path = "Target Support Files/Pods-CryptoWalletMobile/Pods-CryptoWalletMobile.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F74A534D23F24910A77D638E /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
-		F7AE2EC568834B6A9C0DD36C /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
-		FB075724FE2343DE92EA2068 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
-		FEE7F8EBB47F4758883FCAEA /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		F0E5EDE1610AF915622D6D4A /* Pods-CryptoWalletMobile-CryptoWalletMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWalletMobile-CryptoWalletMobileTests.release.xcconfig"; path = "Target Support Files/Pods-CryptoWalletMobile-CryptoWalletMobileTests/Pods-CryptoWalletMobile-CryptoWalletMobileTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,25 +106,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		51C8DDB246AA0EE5EEB62A72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				533679F18AD016A69DAD46E4 /* Pods-CryptoWalletMobile.debug.xcconfig */,
+				E8BBE8EA125736754C928E21 /* Pods-CryptoWalletMobile.release.xcconfig */,
+				BD683E0026D29E0D664F33B1 /* Pods-CryptoWalletMobile-CryptoWalletMobileTests.debug.xcconfig */,
+				F0E5EDE1610AF915622D6D4A /* Pods-CryptoWalletMobile-CryptoWalletMobileTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7A39A46270964E449C71CC19 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FEE7F8EBB47F4758883FCAEA /* AntDesign.ttf */,
-				15FC307107DF4031B67869B7 /* Entypo.ttf */,
-				75495BE2FBEC4C7B8C93421F /* EvilIcons.ttf */,
-				7CA5CF26EFDC41048952BBAD /* Feather.ttf */,
-				962556F4FBE4495AAE6FDC71 /* FontAwesome.ttf */,
-				96C782EFB15746FA8A324C9D /* FontAwesome5_Brands.ttf */,
-				D388D2647E7844BC9F35C5B4 /* FontAwesome5_Regular.ttf */,
-				F74A534D23F24910A77D638E /* FontAwesome5_Solid.ttf */,
-				33836827E8E243B09E93F2B7 /* Fontisto.ttf */,
-				9590886E213E4DC887F5997A /* Foundation.ttf */,
-				2885A30C84824F4CBE33180A /* Ionicons.ttf */,
-				FB075724FE2343DE92EA2068 /* MaterialCommunityIcons.ttf */,
-				5953C172FB3C4FECA0B9444E /* MaterialIcons.ttf */,
-				F7AE2EC568834B6A9C0DD36C /* Octicons.ttf */,
-				298728EDE34A48B68B4EDBC5 /* SimpleLineIcons.ttf */,
-				C4BB46F4D1DE434BA0EBCCDB /* Zocial.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -176,8 +139,8 @@
 				00E356EF1AD99517003FC87E /* CryptoWalletMobileTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				BBD78D7AC51CEA395F1C20DB /* Pods */,
 				7A39A46270964E449C71CC19 /* Resources */,
+				51C8DDB246AA0EE5EEB62A72 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -191,17 +154,6 @@
 				00E356EE1AD99517003FC87E /* CryptoWalletMobileTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3B4392A12AC88292D35C810B /* Pods-CryptoWalletMobile.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-CryptoWalletMobile.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-CryptoWalletMobile-CryptoWalletMobileTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-CryptoWalletMobile-CryptoWalletMobileTests.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +220,7 @@
 				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "CryptoWalletMobile" */;
-			compatibilityVersion = "Xcode 12.0";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -300,22 +252,6 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				463B45BAA0184CA4BA447702 /* AntDesign.ttf in Resources */,
-				AD8338BF30DE4CC0A1F3E9AB /* Entypo.ttf in Resources */,
-				EDAE3C3EBE2A4CAF8DFB3454 /* EvilIcons.ttf in Resources */,
-				63516B5F65BD410DB3C3B7BC /* Feather.ttf in Resources */,
-				A6023EA604504A08A4E27149 /* FontAwesome.ttf in Resources */,
-				36B43F0CE93E405C9AC53B4B /* FontAwesome5_Brands.ttf in Resources */,
-				93D9C8C82C994299826DA18E /* FontAwesome5_Regular.ttf in Resources */,
-				ACC747C46A104D3DBEA3EFEB /* FontAwesome5_Solid.ttf in Resources */,
-				25010EE235C741259089DDB5 /* Fontisto.ttf in Resources */,
-				C472ADEC90A7443C99C11A23 /* Foundation.ttf in Resources */,
-				3DBB232B49714E49AFCCC2EF /* Ionicons.ttf in Resources */,
-				2DAC35589ABD469FBE4C018E /* MaterialCommunityIcons.ttf in Resources */,
-				D47AD7039CF143F6A38BB13F /* MaterialIcons.ttf in Resources */,
-				A3F0B7558F704F068E2FCA73 /* Octicons.ttf in Resources */,
-				569BA4AA4F8F4DFAB212C8DB /* SimpleLineIcons.ttf in Resources */,
-				C4A03D95B34F4B62A113031E /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,10 +436,11 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-CryptoWalletMobile-CryptoWalletMobileTests.debug.xcconfig */;
+			baseConfigurationReference = BD683E0026D29E0D664F33B1 /* Pods-CryptoWalletMobile-CryptoWalletMobileTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 67JX8BX643;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -528,11 +465,12 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-CryptoWalletMobile-CryptoWalletMobileTests.release.xcconfig */;
+			baseConfigurationReference = F0E5EDE1610AF915622D6D4A /* Pods-CryptoWalletMobile-CryptoWalletMobileTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 67JX8BX643;
 				INFOPLIST_FILE = CryptoWalletMobileTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -553,13 +491,15 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-CryptoWalletMobile.debug.xcconfig */;
+			baseConfigurationReference = 533679F18AD016A69DAD46E4 /* Pods-CryptoWalletMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67JX8BX643;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = CryptoWalletMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,6 +511,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = CryptoWalletMobile;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -579,12 +520,14 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-CryptoWalletMobile.release.xcconfig */;
+			baseConfigurationReference = E8BBE8EA125736754C928E21 /* Pods-CryptoWalletMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67JX8BX643;
 				INFOPLIST_FILE = CryptoWalletMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -596,6 +539,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = CryptoWalletMobile;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -634,6 +578,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = "";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -650,7 +595,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -714,7 +659,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",

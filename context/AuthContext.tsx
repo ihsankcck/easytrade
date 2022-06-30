@@ -8,12 +8,13 @@ import React, {
 import {useMutation} from 'react-query';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-import {LoginRequest, login} from '../services';
+import {LoginRequest, login, register} from '../services';
 
 interface StateTypes {
   token: string | undefined;
   userName: string | undefined;
   email: string | undefined;
+  userId: number | undefined;
   isLoading: boolean;
   isSignout: boolean;
 }
@@ -31,6 +32,7 @@ type ACTIONTYPE =
         token: string;
         userName: string;
         email: string;
+        userId: number;
       };
     }
   | {
@@ -39,6 +41,7 @@ type ACTIONTYPE =
         token: string;
         userName: string;
         email: string;
+        userId: number;
       };
     }
   | {type: 'SIGN_OUT'};
@@ -66,45 +69,47 @@ const reducer = (prevState: StateTypes, action: ACTIONTYPE): StateTypes => {
         token: undefined,
         userName: undefined,
         email: undefined,
+        userId: undefined,
       };
   }
 };
 
 export const AuthContextProvider: FC = ({children}) => {
-  const {mutateAsync: loginMutation} = useMutation(login);
+  const {mutateAsync: loginMutation, isLoading: isLoginLoading} =
+    useMutation(login);
+  const {mutateAsync: registerMutation, isLoading: isRegisterLoading} =
+    useMutation(register);
 
   const [state, dispatch] = useReducer(reducer, {
-    isLoading: true,
-    isSignout: false,
+    isSignout: true,
     token: undefined,
     userName: undefined,
     email: undefined,
+    userId: undefined,
+    isLoading: isLoginLoading || isRegisterLoading,
   });
-
-  console.log(state);
 
   useEffect(() => {
     // Fetch the token from storage then navigate to our appropriate place
-    const bootstrapAsync = async () => {
-      let userInfo;
+    // const bootstrapAsync = async () => {
+    //   let userInfo;
+    //   try {
+    //     const storageUserInfo = await AsyncStorage.getItem('userInfo');
+    //     if (storageUserInfo) {
+    //       userInfo = JSON.parse(storageUserInfo);
+    //     }
+    //   } catch (e) {
+    //     // Restoring token failed
+    //   }
+    //   // After restoring token, we may need to validate it in production apps
+    //   // This will switch to the App screen or Auth screen and this loading
+    //   // screen will be unmounted and thrown away.
+    //   dispatch({type: 'RESTORE_TOKEN', payload: userInfo});
+    // };
+    // bootstrapAsync();
 
-      try {
-        const storageUserInfo = await AsyncStorage.getItem('userInfo');
-        if (storageUserInfo) {
-          userInfo = JSON.parse(storageUserInfo)?.token;
-        }
-      } catch (e) {
-        // Restoring token failed
-      }
-
-      // After restoring token, we may need to validate it in production apps
-
-      // This will switch to the App screen or Auth screen and this loading
-      // screen will be unmounted and thrown away.
-      dispatch({type: 'RESTORE_TOKEN', payload: userInfo});
-    };
-
-    bootstrapAsync();
+    AsyncStorage.setItem('userInfo', '');
+    dispatch({type: 'SIGN_OUT'});
   }, []);
 
   const authContext = {
@@ -116,6 +121,7 @@ export const AuthContextProvider: FC = ({children}) => {
             token: response.jwt,
             email: response.user.email,
             userName: response.user.username,
+            userId: response.user.id,
           };
 
           AsyncStorage.setItem('userInfo', JSON.stringify(payload));
@@ -131,14 +137,28 @@ export const AuthContextProvider: FC = ({children}) => {
       });
     },
     signOut: () => {
+      AsyncStorage.setItem('userInfo', '');
       dispatch({type: 'SIGN_OUT'});
     },
-    signUp: async () => {
-      // In a production app, we need to send user data to server and get a token
-      // We will also need to handle errors if sign up failed
-      // After getting token, we need to persist the token using `SecureStore`
-      // In the example, we'll use a dummy token
-      //   dispatch({type: 'SIGN_IN', token: 'dummy-auth-token'});
+    signUp: async data => {
+      return registerMutation(data, {
+        onSuccess: response => {
+          const payload = {
+            token: response.jwt,
+            email: response.user.email,
+            userName: response.user.username,
+            userId: response.user.id,
+          };
+          AsyncStorage.setItem('userInfo', JSON.stringify(payload));
+          dispatch({
+            type: 'SIGN_IN',
+            payload,
+          });
+        },
+        onError(error) {
+          throw error;
+        },
+      });
     },
   };
 

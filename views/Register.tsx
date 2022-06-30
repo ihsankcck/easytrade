@@ -2,25 +2,36 @@ import React, {FC} from 'react';
 import {useForm, Controller} from 'react-hook-form';
 import {Flex, Button, Input, FormControl} from 'native-base';
 
-import {LoginRequest} from '../services';
 import {useAuthContext} from '../context/AuthContext';
 
-const LoginView: FC = ({navigation}) => {
-  const {signIn, isLoading} = useAuthContext();
+const RegisterView: FC = ({navigation}) => {
+  const {signUp, isLoading} = useAuthContext();
 
-  const goToRegisterPage = () => {
-    navigation.push('Register');
-  };
-
-  const {handleSubmit, control} = useForm<LoginRequest>({
+  const {handleSubmit, control, setError} = useForm({
     defaultValues: {
-      identifier: 'ihsankck',
-      password: '123456789',
+      username: '',
+      password: '',
+      email: '',
     },
   });
 
-  const onSubmit = async (data: LoginRequest) => {
-    signIn(data);
+  const onSubmit = async data => {
+    try {
+      await signUp(data);
+    } catch (err) {
+      const errors = err?.response?.data?.error?.details?.errors;
+      if (!errors?.length) return;
+
+      errors.forEach(error => {
+        if (error?.name === 'ValidationError') {
+          error?.path?.forEach(path => {
+            setError(path, {
+              message: error?.message,
+            });
+          });
+        }
+      });
+    }
   };
 
   return (
@@ -31,7 +42,7 @@ const LoginView: FC = ({navigation}) => {
           rules={{
             required: {
               value: true,
-              message: 'Lütfen kullanıcı adı/e-posta alanını doldurunuz',
+              message: 'Lütfen kullanıcı adı alanını doldurunuz',
             },
           }}
           render={({
@@ -39,7 +50,7 @@ const LoginView: FC = ({navigation}) => {
             fieldState: {error},
           }) => (
             <FormControl isRequired isInvalid={!!error?.message}>
-              <FormControl.Label>E-posta/Kullanıcı Adı</FormControl.Label>
+              <FormControl.Label>Kullanıcı adı</FormControl.Label>
               <Input
                 isDisabled={isLoading}
                 size="xl"
@@ -53,7 +64,36 @@ const LoginView: FC = ({navigation}) => {
               </FormControl.ErrorMessage>
             </FormControl>
           )}
-          name="identifier"
+          name="username"
+        />
+        <Controller
+          control={control}
+          rules={{
+            required: {
+              value: true,
+              message: 'Lütfen E-Posta alanını doldurunuz',
+            },
+          }}
+          render={({
+            field: {onChange, onBlur, name, value},
+            fieldState: {error},
+          }) => (
+            <FormControl isRequired isInvalid={!!error?.message}>
+              <FormControl.Label>E posta</FormControl.Label>
+              <Input
+                isDisabled={isLoading}
+                size="xl"
+                name={name}
+                value={value}
+                onChangeText={onChange}
+                onBlur={onBlur}
+              />
+              <FormControl.ErrorMessage>
+                {error?.message}
+              </FormControl.ErrorMessage>
+            </FormControl>
+          )}
+          name="email"
         />
         <Controller
           control={control}
@@ -90,14 +130,6 @@ const LoginView: FC = ({navigation}) => {
           mt="20px"
           isLoading={isLoading}
           onPress={handleSubmit(onSubmit)}>
-          Giriş yap
-        </Button>
-
-        <Button
-          mt="20px"
-          transparent
-          isLoading={isLoading}
-          onPress={goToRegisterPage}>
           Kayıt ol
         </Button>
       </Flex>
@@ -105,4 +137,4 @@ const LoginView: FC = ({navigation}) => {
   );
 };
 
-export default LoginView;
+export default RegisterView;
